@@ -1,0 +1,153 @@
+:root {
+  --color-primary: #0a66c2;
+  --color-text: #333;
+  --color-background-01: #f6f6f6;
+  --box-shadow-p: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20fr 60fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  justify-content: space-between;
+  grid-column: span 2;
+}
+
+.welcome_message {
+  font-size: 2.4rem;
+}
+
+.asidebar {
+  background: var(--color-primary);
+}
+
+.sidebar-title {
+  font-size: 2.8rem;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.list-arrays {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.list-arrays li {
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.list-arrays li:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.list-arrays li:hover a {
+  padding-left: 2rem;
+}
+
+.list-arrays li i {
+  font-size: 2.4rem;
+}
+
+.main {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  overflow: hidden scroll;
+}
+
+.main table {
+  width: 100%;
+  border: 0.2rem solid #ddd;
+}
+
+.main table th,
+.main table td {
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+
+.main table th {
+  background: #ddd;
+}
+
+.main table td {
+  border: 0.1rem solid #ddd;
+  height: min-content;
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.delete_btn {
+  background: #f44336;
+}
+
+.modifie_btn {
+  background: #ffc107;
+}
+
+.acceptation_remove {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.btns_modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.apply-modal h3 {
+  font-size: 2.4rem;
+}
+
+.btns_modal button {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.btn_yes {
+  background: green;
+}
+
+button.btn_no {
+  background: #f44336;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/utilities.css" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js" defer></script>
+
+    <title>Jobing || Working Is Easy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><span>J</span>obing</div>
+
+      <div class="form-connection_inscription">
+        <form class="form-connection" method="post">
+          <input
+            type="text"
+            placeholder="username"
+            name="username"
+            class="form-connection_input"
+          />
+          <input
+            type="password"
+            placeholder="password"
+            name="password"
+            class="form-connection_input"
+          />
+          <button type="submit" class="form-connection_submit">Connect</button>
+        </form>
+        <button class="inscription-btn">inscription</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="text">
+          <h1 class="title">
+            CONTACT THE BEST CANDIDATES.
+            <br />
+            RECRUIT THE BEST PROFILES.
+          </h1>
+
+          <form class="search_form">
+            <input type="text" placeholder="Find Your Job Here..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="jobs padding-section container"></section>
+
+      <div class="apply-modal hidden">
+        <form class="form_apply">
+          <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+          <div class="item job_item">
+            <label for="advertisment">Job</label
+            ><input
+              type="text"
+              name="advertisment"
+              id="advertisment"
+              disabled
+              value="JOB"
+            />
+          </div>
+          <div class="item">
+            <label for="apply-modal_firstname">Frist Name</label
+            ><input type="text" name="firstname" id="apply-modal_firstname" />
+          </div>
+          <div class="item">
+            <label for="apply-modal_lastname">Last Name</label
+            ><input type="text" name="lastname" id="apply-modal_lastname" />
+          </div>
+          <div class="item">
+            <label for="apply-modal_email">Email</label
+            ><input type="email" name="email" id="apply-modal_email" />
+          </div>
+          <div class="item">
+            <label for="apply-modal_tel">Tel</label
+            ><input type="text" name="tel" id="apply-modal_tel" />
+          </div>
+          <div class="item textarea">
+            <textarea id="" cols="30" rows="10" name="message"></textarea>
+          </div>
+          <button type="submit">Apply</button>
+        </form>
+      </div>
+
+      <div class="inscription-modal hidden">
+        <form class="form_inscription hidden" method="post">
+          <h3>INSCRIPTION</h3>
+          <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+          <div class="item job_item">
+            <label for="stat">why you are in our site...</label>
+
+            <select name="stat" id="stat" required>
+              <option value="">--Please choose an option--</option>
+              <option value="user">I search a JOB</option>
+              <option value="society">I have a JOB for youu</option>
+            </select>
+          </div>
+
+          <div class="item job_item">
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" required />
+          </div>
+
+          <div class="item">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+
+          <div class="item">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="item">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" required />
+          </div>
+
+          <div class="item">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required />
+          </div>
+
+          <div class="item">
+            <label for="age">age</label>
+            <input type="number" name="age" id="age" required />
+          </div>
+
+          <div class="item">
+            <label for="tel">Tel</label>
+            <input type="tel" name="tel" id="tel" required />
+          </div>
+
+          <!-- <input type="submit" value="Inscription" /> -->
+          <button type="submit">Inscription</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">Welcome To Our Site</footer>
+  </body>
+</html>

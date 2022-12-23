@@ -1,0 +1,16 @@
+:root {
+  --color-primary: #0a66c2;
+  --color-text: #333;
+  --color-background-01: #f6f6f6;
+  --box-shadow-p: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 128rem;
+  width: 90%;
+}
+
+.padding-section {
+  padding: 9rem 0;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Script -->
+    <script src="js/admin.js" type="module" defer></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/utilities.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/admin.css" />
+
+    <title>Jobing || Working Is Easy</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="logo"><span>J</span>obing</div>
+
+      <div class="form-connection_inscription">
+        <form class="form-connection" method="post">
+          <input
+            type="text"
+            placeholder="username"
+            name="username"
+            class="form-connection_input"
+          />
+          <input
+            type="password"
+            placeholder="password"
+            name="password"
+            class="form-connection_input"
+          />
+          <button type="submit" class="form-connection_submit">Connect</button>
+        </form>
+        <button class="inscription-btn">inscription</button>
+      </div>
+    </header>
+
+    <aside class="asidebar">
+      <h2 class="sidebar-title">Data Lists</h2>
+      <ul class="list-arrays">
+        <li>
+          <i class="fa-regular fa-user" class="sidebar_icon"></i>
+          <a href="#">users</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase" class="sidebar_icon"></i>
+          <a href="#">advertisements</a>
+        </li>
+        <li>
+          <i class="fa-regular fa-building" class="sidebar_icon"></i
+          ><a href="#">societies</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="main"></main>
+
+    <footer class="footer">Welcome To Our Site</footer>
+
+    <div class="apply-modal hidden">
+      <div class="form_apply acceptation_remove">
+        <h3>You want to delete this from data ??</h3>
+        <div class="btns_modal">
+          <button class="btn_yes">YES</button><button class="btn_no">NO</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
